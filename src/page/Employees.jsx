@@ -26,13 +26,13 @@ const Employees = () => {
     console.log(filteredDepartment);
 
     const EmployeeByName = employees.filter((emp) => {
-        return emp.name.toLowerCase().includes(filteredEmployee.toLowerCase())
+        return emp.name.toLowerCase().includes(filteredEmployee.toLowerCase().trim())
     }).filter((emp) => {
         return filteredDepartment == "" ? true : emp.department == filteredDepartment
     })
 
     const sortSalary = () => {
-        const sorted = [...employees].sort((a, b) => { // i made copy of employees array so its dont change orignal array
+        const sorted = EmployeeByName.sort((a, b) => { 
             return isAscending
                 ? Number(a.salary) - Number(b.salary)
                 : Number(b.salary) - Number(a.salary);
