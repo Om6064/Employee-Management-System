@@ -28,6 +28,9 @@ const EmployeeForm = () => {
         if (employee.name.trim() === "") {
             tempObj.name = "Please Enter The Name";
         }
+        if (employee.salary < 1000 || employee.salary > 100000) {
+            tempObj.salary = "Enter Salary Between 1000 to 1,00,000"
+        }
 
         setError(tempObj);
 
@@ -90,6 +93,7 @@ const EmployeeForm = () => {
                                 onChange={handleChange}
                                 value={employee.salary}
                             />
+                            {error.salary && <p className="text-red-400 text-sm mt-1">{error.salary}</p>}
                         </div>
                     </div>
 

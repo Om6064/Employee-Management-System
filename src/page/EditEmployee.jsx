@@ -40,12 +40,13 @@ const EditEmployee = () => {
         if (employee.name.trim() === "") {
             tempObj.name = "Please enter the name";
         }
-        if (employee.salary === "") {
-            tempObj.salary = "Please enter the salary";
+        if (employee.salary < 1000 || employee.salary > 100000) {
+             tempObj.salary = "Enter Salary Between 1000 to 1,00,000"
         }
         if (employee.department === "") {
             tempObj.department = "Please select a department";
         }
+        
 
         setError(tempObj);
 
