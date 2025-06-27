@@ -83,9 +83,9 @@ const Service = () => {
 
               <div className={`mt-6 h-1 bg-gradient-to-r ${service.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
 
-              <div className="absolute top-6 right-6 text-2xl text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+              {/* <div className="absolute top-6 right-6 text-2xl text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
                 →
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -116,7 +116,7 @@ const Service = () => {
             { number: '24/7', label: 'Support' },
             { number: '50+', label: 'Features' }
           ].map((stat, idx) => (
-            <div key={idx} className="text-center bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-700">
+            <div key={idx} className="text-center bg-gray-800 rounded-xl transition-all duration-300 p-6 shadow-md hover:shadow-lg border border-gray-700 hover:-translate-y-1 cursor-pointer">
               <div className="text-3xl font-bold text-blue-400 mb-2">{stat.number}</div>
               <div className="text-gray-300 text-sm">{stat.label}</div>
             </div>

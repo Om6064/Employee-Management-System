@@ -60,7 +60,7 @@ const Employees = () => {
                     <div className="flex gap-4">
                         <select
                             id="department"
-                            className="bg-[#374151] border border-gray-600 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-3"
+                            className="bg-[#374151] border border-gray-600 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 pr-10 pl-2"
                             onChange={(e) => {
                                 setFilteredDepartment(e.target.value)
                             }}
@@ -75,7 +75,7 @@ const Employees = () => {
                         <input
                             type="text"
                             id="name"
-                            className="bg-[#374151] text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-3 transition-all duration-200 border border-gray-600"
+                            className="bg-[#374151] text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  pr-10 pl-2 transition-all duration-200 border border-gray-600"
                             placeholder="Search By Name"
                             required
                             onChange={(e) => {

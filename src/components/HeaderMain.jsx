@@ -36,11 +36,32 @@ const HeaderMain = ({ isloggedin, setIsLogedin }) => {
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/" className={`${pathname === "/" ? "text-white font-semibold border-b-2 border-white" : "text-gray-300 hover:text-white"} transition-all duration-300 pb-1`}>Home</Link>
-          <Link to="/service" className={`${pathname === "/service" ? "text-white font-semibold border-b-2 border-white" : "text-gray-300 hover:text-white"} transition-all duration-300 pb-1`}>Services</Link>
+          <Link
+            to="/"
+            className={`${pathname === "/" ? "text-white border-white border-b-2" : "border-transparent border-b-2 text-gray-300 hover:text-white"} font-semibold pb-1`}
+          >
+            Home
+          </Link>
+
+          <Link
+            to="/service"
+            className={`${pathname === "/service" ? "text-white border-white border-b-2" : "border-transparent border-b-2 text-gray-300 hover:text-white "} font-semibold pb-1`}
+          >
+            Services
+          </Link>
+
           {isloggedin && (
-            <Link to="/employees" className={`${pathname === "/employees" || pathname === "/add-employee" || pathname.includes("/edit-employee") ? "text-white font-semibold border-b-2 border-white" : "text-gray-300 hover:text-white"} transition-all duration-300 pb-1`}>Employees</Link>
+            <Link
+              to="/employees"
+              className={`${pathname === "/employees" || pathname === "/add-employee" || pathname.includes("/edit-employee")
+                  ? "text-white border-white border-b-2"
+                  : "text-gray-300 hover:text-white border-transparent border-b-2"
+                } font-semibold pb-1`}
+            >
+              Employees
+            </Link>
           )}
+
           {isloggedin ? (
             <button
               onClick={handleClick}
