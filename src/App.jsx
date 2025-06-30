@@ -10,6 +10,7 @@ import ProtectedRouter from "./components/ProtectedRouter"
 import Employees from "./page/Employees"
 import AddEmployee from "./page/AddEmployee"
 import EditEmployee from "./page/EditEmployee"
+import ProtectedRoute2 from "./components/ProtectedRoute2"
 
 const App = () => {
     const [isloggedin, setIsLogedin] = useState(false)
@@ -27,7 +28,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/service" element={<Service />} />
-                <Route path="/login" element={<Login setIsLogedin={setIsLogedin} />} />
+                <Route path="/login" element={<ProtectedRoute2 Component={Login} />} />
                 <Route path="/employees" element={<ProtectedRouter Component={Employees} />} />
                 <Route path="/add-employee" element={<ProtectedRouter Component={AddEmployee} />} />
                 <Route path="/edit-employee/:id" element={<ProtectedRouter Component={EditEmployee} />} />
