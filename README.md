@@ -1,12 +1,47 @@
-# React + Vite
+# Employee Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Employee Management System built with **React**, styled using **Tailwind CSS** and **Flowbite**, with routing handled by **React Router DOM**. Includes **Remix Icons**, a custom favicon, and a site title for a polished touch.
 
-Currently, two official plugins are available:
+## 🌐 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View Live](https://employee-management-system-nine-ruddy.vercel.app/)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add, edit, update, and delete employee records
+- Data persists in Local Storage
+- Clean and modern UI with Flowbite and Tailwind CSS
+- Multi-page navigation using React Router DOM
+- Remix Icons for beautiful icons
+- Custom favicon and page title
+- Fully responsive for all screen sizes
+- Built with React functional components and hooks
+
+## 🛠️ Technologies Used
+
+- React.js
+- React Router DOM
+- Tailwind CSS
+- Flowbite
+- Remix Icon
+- Local Storage API
+- JSX & HTML5
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/om6064/employee-management-system.git
+2. **Install dependencies**
+
+    ```bash
+    cd Employee-Management-System
+    npm install
+    ```
+
+3. **Run the app**
+
+    ```bash
+    npm start
+    ```
+**The app will open in your default browser at http://localhost:3000.**
