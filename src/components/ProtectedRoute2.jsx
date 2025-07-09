@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const ProtectedRoute2 = ({Component}) => {
+const ProtectedRoute2 = ({Component ,setIsLogedin}) => {
 
     const navigate = useNavigate()
 
@@ -14,7 +14,7 @@ const ProtectedRoute2 = ({Component}) => {
     }, [])
 
     return (
-        <Component />
+        <Component setIsLogedin={setIsLogedin} />
     )
 }
 

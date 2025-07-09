@@ -19,7 +19,8 @@ const Login = ({ setIsLogedin }) => {
       toast.success("Logged In Successfully");
       setIsLogedin(true);
       localStorage.setItem("isloggedin", JSON.stringify(true));
-      navigate("/employees");
+      navigate("/employees")
+      
     } else {
       toast.error("Email or Password is incorrect");
     }

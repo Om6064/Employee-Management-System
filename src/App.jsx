@@ -28,7 +28,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/service" element={<Service />} />
-                <Route path="/login" element={<ProtectedRoute2 Component={Login} />} />
+                <Route path="/login" element={<ProtectedRoute2 Component={Login} setIsLogedin={setIsLogedin}/>} />
                 <Route path="/employees" element={<ProtectedRouter Component={Employees} />} />
                 <Route path="/add-employee" element={<ProtectedRouter Component={AddEmployee} />} />
                 <Route path="/edit-employee/:id" element={<ProtectedRouter Component={EditEmployee} />} />
